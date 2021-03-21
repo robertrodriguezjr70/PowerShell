@@ -23,6 +23,9 @@
 #Create a directory
 #new-item -ItemType Directory -Path C:\NewDir
 
+#Sorting
+#Get-Service | Sort-Object Status,Name|More
+
 #Write and open a file
 #GCI -recurse |Export-Csv "C:\Users\home\Desktop\PowerShellExport.csv"
 #invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
