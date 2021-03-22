@@ -25,6 +25,8 @@
 
 #Sorting
 #Get-Service | Sort-Object Status,Name|More
+#Get-Service | Sort-Object Status,Name|Format-Wide -column 4 -GroupBy status
+
 
 #Write and open a file
 #GCI -recurse |Export-Csv "C:\Users\home\Desktop\PowerShellExport.csv"
