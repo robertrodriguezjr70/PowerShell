@@ -5,7 +5,7 @@
 #Get-Command | More
 #Get-PSProvider
 #Get-PSDrive
-#Get-Process <name> | Format-Table -Property Path
+#Get-Process <name> | Format-Table -Property Path -AutoSize
 #Set-Location c:
 #$MyDate=Get-date
 
