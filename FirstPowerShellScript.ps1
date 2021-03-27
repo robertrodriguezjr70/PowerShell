@@ -29,10 +29,10 @@
 #Get-Service | Where-Object {$_.status -eq "running"}
 
 #Array List
-#[System.Collections.ArrayList]$Var="Hello","Again","World"
+#[System.Collections.ArrayList]$Var="chrome","VirtualBox","PowerShell"
 #$Var.Add("!")
 #$Var.Remove("!")
-
+#Get-Process $Var
 
 
 #Write and open a file
