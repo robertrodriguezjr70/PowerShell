@@ -31,6 +31,7 @@
 #Array List
 #[System.Collections.ArrayList]$Var="Hello","Again","World"
 #$Var.Add("!")
+#$Var.Remove("!")
 
 
 
