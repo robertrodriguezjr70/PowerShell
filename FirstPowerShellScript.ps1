@@ -30,8 +30,8 @@
 
 #Array List
 #[System.Collections.ArrayList]$Var="chrome","VirtualBox","PowerShell"
-#$Var.Add("!")
-#$Var.Remove("!")
+#$Var.Add(WinWord")
+#$Var.Remove("winWord")
 #Get-Process $Var
 
 
