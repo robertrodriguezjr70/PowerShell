@@ -14,7 +14,7 @@
 #gci -recurse
 
 #create a new file, write,append, read
-#New-Item file.txt -type file
+#New-Item file.txt -type file/Directory
 #Set-Content file.txt "add text here"
 #Add-Content file.txt "appending another line here"
 #Get-Content file.txt
@@ -28,6 +28,11 @@
 #Get-Service | Sort-Object Status,Name|Format-Wide -column 4 -GroupBy status
 #Get-Service | Where-Object {$_.status -eq "running"}
 
+#Array List
+#[System.Collections.ArrayList]$Var="Hello","Again","World"
+#$Var.Add("!")
+
+
 
 #Write and open a file
 #GCI -recurse |Export-Csv "C:\Users\home\Desktop\PowerShellExport.csv"
@@ -37,8 +42,8 @@
 #get-eventlog application | ogv
 
 #Computer Management
-Get-CimInstance Win32_bios
-Get-CimInstance Win32_processor
+#Get-CimInstance Win32_bios
+#Get-CimInstance Win32_processor
 
 
 #---------------------------
