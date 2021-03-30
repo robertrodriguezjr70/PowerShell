@@ -27,6 +27,7 @@
 #Get-Service | Sort-Object Status,Name|More
 #Get-Service | Sort-Object Status,Name|Format-Wide -column 4 -GroupBy status
 #Get-Service | Where-Object {$_.status -eq "running"}
+#Get-Service | Select-Object cpu -First 4
 
 #Array List
 #[System.Collections.ArrayList]$Var="chrome","VirtualBox","PowerShell"
