@@ -20,8 +20,14 @@
 #Get-Content file.txt
 #$varname = Get-Content file.txt
 
-#Create a directory
-#new-item -ItemType Directory -Path C:\NewDir
+#open/Export a file
+#Set-Service| Where-Object status -eq "running" | Export-Csv "C:\Users\home\Desktop\RunningServices.csv"
+#invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
+#gci -Recurse -Include *.jpg
+
+
+#Send to printer
+#Get-Service|Out-Printer
 
 #Sorting
 #Get-Service | Sort-Object Status,Name|More
@@ -36,11 +42,6 @@
 #$Var.Remove("winWord")
 #Get-Process $Var
 
-
-#open/Export a file
-#Set-Service| Where-Object status -eq "running" | Export-Csv "C:\Users\home\Desktop\RunningServices.csv"
-#invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
-#gci -Recurse -Include *.jpg
 
 #get-eventlog application | ogv
 
