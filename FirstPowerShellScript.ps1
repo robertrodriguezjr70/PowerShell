@@ -37,8 +37,8 @@
 #Get-Process $Var
 
 
-#open a file
-#GCI -recurse |Export-Csv "C:\Users\home\Desktop\PowerShellExport.csv"
+#open/Export a file
+#Set-Service| Where-Object status -eq "running" | Export-Csv "C:\Users\home\Desktop\RunningServices.csv"
 #invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
 #gci -Recurse -Include *.jpg
 
