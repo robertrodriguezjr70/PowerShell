@@ -20,14 +20,17 @@
 #Get-Content file.txt
 #$varname = Get-Content file.txt
 
-#open/Export a file
+#open/Export/delete a file
 #Set-Service| Where-Object status -eq "running" | Export-Csv "C:\Users\home\Desktop\RunningServices.csv"
 #invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
+#Remove-item "C:\Users\home\Desktop\PowerShellExport.csv"
+#Remove-item "C:\Users\home\Desktop\"
 #gci -Recurse -Include *.jpg
 
 
 #Send to printer
 #Get-Service|Out-Printer
+
 
 #Sorting
 #Get-Service | Sort-Object Status,Name|More
