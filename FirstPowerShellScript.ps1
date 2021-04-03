@@ -26,7 +26,8 @@
 #Sorting
 #Get-Service | Sort-Object Status,Name|More
 #Get-Service | Sort-Object Status,Name|Format-Wide -column 4 -GroupBy status
-#Get-Service | Where-Object {$_.status -eq "running"}
+#Get-Service | Where-Objece status -eq "running"
+#Get-Service | where-Object status -like "nni*"
 #Get-Service | Select-Object cpu -First 4
 
 #Array List
@@ -36,7 +37,7 @@
 #Get-Process $Var
 
 
-#Write and open a file
+#open a file
 #GCI -recurse |Export-Csv "C:\Users\home\Desktop\PowerShellExport.csv"
 #invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
 #gci -Recurse -Include *.jpg
