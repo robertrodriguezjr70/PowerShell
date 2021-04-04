@@ -20,12 +20,12 @@
 #Get-Content file.txt
 #$varname = Get-Content file.txt
 
-#open/Export/delete a file
+#open/Export/delete a file/Directory
 #Set-Service| Where-Object status -eq "running" | Export-Csv "C:\Users\home\Desktop\RunningServices.csv"
 #Set-Service| Where-Object status -eq "running" | Out-File "C:\Users\home\Desktop\RunningServices.txt"
 #invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
 #Remove-item "C:\Users\home\Desktop\PowerShellExport.csv"
-#Remove-item "C:\Users\home\Desktop\"
+#Remove-item  -recurs "C:\Users\home\Desktop\"
 #gci -Recurse -Include *.jpg
 
 
