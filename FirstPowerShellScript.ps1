@@ -22,6 +22,7 @@
 
 #open/Export/delete a file
 #Set-Service| Where-Object status -eq "running" | Export-Csv "C:\Users\home\Desktop\RunningServices.csv"
+#Set-Service| Where-Object status -eq "running" | Out-File "C:\Users\home\Desktop\RunningServices.txt"
 #invoke-item "C:\Users\home\Desktop\PowerShellExport.csv"
 #Remove-item "C:\Users\home\Desktop\PowerShellExport.csv"
 #Remove-item "C:\Users\home\Desktop\"
@@ -30,6 +31,7 @@
 
 #Send to printer
 #Get-Service|Out-Printer
+#Set-Service| Where-Object status -eq "running" | Out-File "C:\Users\home\Desktop\RunningServices.txt" |Out-Printer
 
 
 #Sorting
