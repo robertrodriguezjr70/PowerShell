@@ -47,6 +47,8 @@
 #$Var.Remove("winWord")
 #Get-Process $Var
 
+#Get the Bios Version
+#Get-CimInstance -Class Win32_BIOS
 
 #get-eventlog application | ogv
 
