@@ -55,6 +55,9 @@
 #Computer Management
 #Get-CimInstance Win32_bios
 #Get-CimInstance Win32_processor
+#Get-Printer
+#Get-PrinterPort
+
 
 
 #---------------------------
