@@ -1,10 +1,11 @@
-﻿#----------- Commands learned ---------
+﻿#----------- Commands learned ----------------------------------------------------------------------------------------------------------------
 #Get-Help <cmdlet> -examples -ShowWindow
 #Get-Help <cmdlet> -full
 #Get-Help <cmdlet> -detail
 #Get-Command | More
 #Get-PSProvider
 #Get-PSDrive
+#Get-Member
 #Get-Process <name> | Format-Table -Property Path -AutoSize
 #Set-Location c:
 #$MyDate=Get-date
@@ -57,10 +58,12 @@
 #Get-CimInstance Win32_processor
 #Get-Printer
 #Get-PrinterPort
+#Get-WindowsUpdateLog
+#Get-Certificate
+#Get-EventLog
+#Get-TimeZone
 
-
-
-#---------------------------
+#---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
 cls
 
 $Greeting="Hello Robert"
