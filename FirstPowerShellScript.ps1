@@ -55,6 +55,7 @@
 #Get-CimInstance -class Win32_bios
 #Get-CimInstance Win32_processor
 #Get-CimInstance -class Win32_PnPSignedDriver
+#Get-CimInstance -class Win32_LogicalDisk
 #Get-Printer
 #Get-PrinterPort
 #Get-WindowsUpdateLog
