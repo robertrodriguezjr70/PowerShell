@@ -48,14 +48,13 @@
 #$Var.Remove("winWord")
 #Get-Process $Var
 
-#Get the Bios Version
-#Get-CimInstance -Class Win32_BIOS
 
 #get-eventlog application | ogv
 
 #Computer Management
-#Get-CimInstance Win32_bios
+#Get-CimInstance -class Win32_bios
 #Get-CimInstance Win32_processor
+#Get-CimInstance -class Win32_PnPSignedDriver
 #Get-Printer
 #Get-PrinterPort
 #Get-WindowsUpdateLog
