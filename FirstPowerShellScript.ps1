@@ -1,6 +1,7 @@
 ﻿#----------- Commands learned ----------------------------------------------------------------------------------------------------------------
 #$PSVersionTable
 #$profile
+#$PSHome
 #Get-Help <cmdlet> -examples -ShowWindow
 #Get-Help <cmdlet> -full
 #Get-Help <cmdlet> -detail
