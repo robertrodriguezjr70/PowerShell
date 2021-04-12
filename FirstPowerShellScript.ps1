@@ -12,6 +12,14 @@
 #Get-Process <name> | Format-Table -Property Path -AutoSize
 #Set-Location c:
 #$MyDate=Get-date
+$host.ui.RawUI.Backgroundcolor = "black"
+$host.ui.RawUI.Forgroundcolor = "green"
+
+#Can't run scripts are disabled
+#Unrestricted policy loads all configuration files and runs all scripts. If you run an unsigned script that was downloaded from the Internet, you are prompted for permission before it runs.
+#Whereas in Bypass policy, nothing is blocked and there are no warnings or prompts during script execution. Bypass ExecutionPolicy is more relaxed than Unrestricted
+#Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force;
+#Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force;
 
 #Write-Host "Today is $MyDate"
 #Get-PSDrive 
