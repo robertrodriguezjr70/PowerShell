@@ -12,8 +12,8 @@
 #Get-Process <name> | Format-Table -Property Path -AutoSize
 #Set-Location c:
 #$MyDate=Get-date
-$host.ui.RawUI.Backgroundcolor = "black"
-$host.ui.RawUI.Forgroundcolor = "green"
+#$host.ui.RawUI.Backgroundcolor = "black"
+#$host.ui.RawUI.Forgroundcolor = "green"
 
 #Can't run scripts are disabled
 #Unrestricted policy loads all configuration files and runs all scripts. If you run an unsigned script that was downloaded from the Internet, you are prompted for permission before it runs.
