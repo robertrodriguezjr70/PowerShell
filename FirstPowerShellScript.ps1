@@ -1,4 +1,6 @@
 ﻿#----------- Commands learned ----------------------------------------------------------------------------------------------------------------
+#$PSVersionTable
+#$profile
 #Get-Help <cmdlet> -examples -ShowWindow
 #Get-Help <cmdlet> -full
 #Get-Help <cmdlet> -detail
@@ -94,7 +96,7 @@ if ($ifMessage.Month -eq 2)
 else
 {
 
-    write-Host "Not Feb Foo"
+    write-Host "Not Feb "
 
 }
 
