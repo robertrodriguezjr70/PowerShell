@@ -1,4 +1,6 @@
 ﻿#----------- Commands learned ----------------------------------------------------------------------------------------------------------------
+#Get-ExecutionPolicy
+#Set-ExecutionPolicy Unrestricted
 #$PSVersionTable
 #$profile
 #$PSHome
