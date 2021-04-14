@@ -77,41 +77,13 @@
 #Get-TimeZone
 
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
-cls
 
-$Greeting="Hello Robert"
-$ifMessage = Get-Date
-
-
-Write-host "$Greeting, Your script has started"
-
-# This is a comment
-Get-Process | Format-Wide -Column 6
-
-Start-Sleep 3
-
-cls
-
-Set-Location C:\Windows
-
-gci -Force
-
-
-# This is a comment
-if ($ifMessage.Month -eq 2)
+foreach ($cntr in <variable name>)
 {
-    Write-Host "Its Feb and I have " 
-    Write-Host `$"10 to my name"
-   
-}
-else
+Write-Host "blah blah"
 {
 
-    write-Host "Not Feb "
-
-}
 
 
 
-Write-Host `n"$Greeting, Your script has ended"
 
