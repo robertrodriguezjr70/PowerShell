@@ -82,17 +82,18 @@ foreach ($cntr in <variable name>)
    {
       Write-Host "blah blah"
   {
-#####
-if()
-  {
-  }
-Elseif()
-  {
-  }
+##########
+cls
+$Service = Get-process Spoolsv
+
+IF ($Service.Id -eq 4532)
+{
+   Write-Host "YAY!"
+}
 Else
-  {
-  }
-######
+{
+   Write-host "Nope!"
+#########
 
 
 
