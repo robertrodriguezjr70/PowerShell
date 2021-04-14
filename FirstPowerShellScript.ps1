@@ -82,6 +82,17 @@ foreach ($cntr in <variable name>)
 {
 Write-Host "blah blah"
 {
+#####
+if()
+  {
+  }
+Elseif()
+  {
+  }
+Else
+  {
+  }
+######
 
 
 
