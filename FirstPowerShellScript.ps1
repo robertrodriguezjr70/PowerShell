@@ -76,6 +76,8 @@
 #Get-Certificate
 #Get-EventLog
 #Get-TimeZone
+#Start-Sleep - seconds 5
+#Read-Host
 #Get-aduser -filter *
 
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
@@ -95,14 +97,11 @@ Finally
   
 }
 
-#################################################
-
 foreach ($cntr in <variable name>)
    {
       Write-Host "blah blah"
   {
   
-##########
 
 $Service = Get-process Spoolsv
 
@@ -113,16 +112,17 @@ IF ($Service.Id -eq 4532)
 Else
 {
    Write-host "Nope!"
-   
-############
+  
+  
+#---------------------------  Functions -------------------------------------------------------------------------------------------------  
+ 
 function Get-RunningServices
 {Get-Service|Where-Object status -eq running}
 
+#---------------------------  Script Pamrs -------------------------------------------------------------------------------------------------
 
-   
-#########
-
-
+param($name)
+Write-host "Hello" + $name
 
 
 
