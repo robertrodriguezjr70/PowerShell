@@ -1,4 +1,5 @@
 ﻿#----------- Commands learned ----------------------------------------------------------------------------------------------------------------
+#Update-Help
 #Get-ExecutionPolicy
 #Set-ExecutionPolicy Unrestricted
 #$PSVersionTable
@@ -75,6 +76,7 @@
 #Get-Certificate
 #Get-EventLog
 #Get-TimeZone
+#Get-aduser -filter *
 
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
 Try
@@ -111,6 +113,12 @@ IF ($Service.Id -eq 4532)
 Else
 {
    Write-host "Nope!"
+   
+############
+function Get-RunningServices
+{Get-Service|Where-Object status -eq running}
+
+
    
 #########
 
