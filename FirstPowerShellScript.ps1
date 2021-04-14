@@ -79,9 +79,9 @@
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
 
 foreach ($cntr in <variable name>)
-{
-Write-Host "blah blah"
-{
+   {
+      Write-Host "blah blah"
+  {
 #####
 if()
   {
