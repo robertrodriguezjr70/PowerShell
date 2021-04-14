@@ -79,7 +79,9 @@
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
 Try
 {
- Get-Service -name blahblah -ErrorAction Stop
+ Get-Service -name blahblah -ErrorAction Stop  <--will display catch error message
+                or
+ Get-Service -name blahblah -ErrorAction SilentlyConinue <--Will not display an error message, and continue with script
 
 }
 Catch
