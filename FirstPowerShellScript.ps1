@@ -77,13 +77,29 @@
 #Get-TimeZone
 
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
+Try
+{
+ Get-Service -name blahblah -ErrorAction Stop
+
+}
+Catch
+{
+  Write-Host "Service is not installed"
+}
+Finally
+{
+  
+}
+
+#################################################
 
 foreach ($cntr in <variable name>)
    {
       Write-Host "blah blah"
   {
+  
 ##########
-cls
+
 $Service = Get-process Spoolsv
 
 IF ($Service.Id -eq 4532)
@@ -93,6 +109,7 @@ IF ($Service.Id -eq 4532)
 Else
 {
    Write-host "Nope!"
+   
 #########
 
 
