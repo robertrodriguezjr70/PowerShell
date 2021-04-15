@@ -81,6 +81,10 @@
 #Read-Host
 #Get-aduser -filter *
 
+#Remote Management
+#enable-PSremoting  <-- enter this in destination computer
+#Enter-PSSession -computername <computername> <-- on source computer
+
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
 Try
 {
