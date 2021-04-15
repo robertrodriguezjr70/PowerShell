@@ -1,5 +1,6 @@
 ﻿#----------- Commands learned ----------------------------------------------------------------------------------------------------------------
 #Update-Help
+#Start/Stop-Transcript
 #Get-ExecutionPolicy
 #hostname
 #Set-ExecutionPolicy Unrestricted
@@ -80,6 +81,7 @@
 #Start-Sleep - seconds 5
 #Read-Host
 #Get-aduser -filter *
+#Test-Connection google.com
 
 #Remote Management
 #Enable-PSremoting  <-- enter this in destination computer
