@@ -1,5 +1,6 @@
 ﻿#----------- Commands learned ----------------------------------------------------------------------------------------------------------------
 #Update-Help
+#Get-Help <command> - online
 #Start/Stop-Transcript
 #Get-ExecutionPolicy
 #hostname
