@@ -81,8 +81,10 @@
 #Get-TimeZone
 #Start-Sleep - seconds 5
 #Read-Host
-#Get-aduser -filter *
 #Test-Connection google.com
+
+#user Management
+#Get-aduser -Properties *
 
 #Remote Management
 #Enable-PSremoting  <-- enter this in destination computer
