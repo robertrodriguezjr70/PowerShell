@@ -1,4 +1,4 @@
 
 
-#Start-AZVM -ResourceGroupName "name here" -Name "VM name"
-#Stop-AZVM  -ResourceGroupName "name here " -Name "VM name"
+#Start-AZVM -ResourceGroupName "RobertsResourceGroup" -Name "RobertsWindowsServer2016"
+#Stop-AZVM  -ResourceGroupName "RobertsResourceGroup" -Name "RobertsWindowsServer2016"
