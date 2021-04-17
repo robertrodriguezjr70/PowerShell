@@ -85,7 +85,15 @@
 #Test-Connection google.com
 
 #user Management
-#Get-aduser -Properties *
+#Get-Aduser -Properties *
+#Get-ADuser -Properties <property>
+#Get-ADUser -Filter * | Select-Object name
+
+#Set-Aduser <first last> -Properties <property>
+
+#Get-ADGroupMember 'group name' | Select-Object name
+
+#Search-ADAccount -AccountDisabled
 
 #Remote Management
 #Enable-PSremoting  <-- enter this in destination computer
