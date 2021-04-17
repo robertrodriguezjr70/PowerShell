@@ -2,6 +2,7 @@
 #Update-Help
 #Get-Help <command> - online
 #Start/Stop-Transcript
+#Import-Module <module name>
 #Get-ExecutionPolicy
 #hostname
 #Set-ExecutionPolicy Unrestricted
