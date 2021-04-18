@@ -95,6 +95,19 @@
 
 #Search-ADAccount -AccountDisabled
 
+#Read Input
+#$Firstname = Read-Host -Prompt "Please enter First Name"
+#$Lastname = Read-Host -Prompt "Please enter  Last Name"
+
+#New-ADUser
+#-Name "$firstname $Lastname" `
+#-GivenName $Firstname `
+#-LastName $Lastname `
+#-UserPrincipalName "$Firstname.$Lasntname"
+
+
+
+
 #Remote Management
 #Enable-PSremoting  <-- enter this in destination computer
 #Enter-PSSession -computername <computername> <-- on source computer
