@@ -18,7 +18,17 @@
 #$Firstname = Read-Host -Prompt "Please enter First Name"
 #$Lastname = Read-Host -Prompt "Please enter  Last Name"
 
+#----- import from CSV and add list of users to AD ----
+#$users=Import-CSV <path>
 
+#ForEach($user in $users)
+{
 #New-ADUser
-#-Name "$firstname $Lastname" `
-#-GivenName $Firstname `
+#-Name  $user.'First Name + ' " " ' + $user.'Last Name') `
+#-GivenName $user.'First Name' `
+#-Surname $user.'Last Name'
+#-Description #user.Description
+
+}
+
+#----- import from CSV and add list of users to AD ----
