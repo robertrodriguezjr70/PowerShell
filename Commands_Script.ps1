@@ -91,9 +91,13 @@
 
 #Set-Aduser <first last> -Properties <property>
 
+#Get-ADuser -Filter {Enabled -eq $True} -SearchBase "OU Path"|Select-Object name
+
 #Get-ADGroupMember 'group name' | Select-Object name
 
 #Search-ADAccount -AccountDisabled
+#Search-ADAccount -AccountDisabled | Move-ADObject -TargetPath "OU path"
+
 
 #Read Input
 #$Firstname = Read-Host -Prompt "Please enter First Name"
