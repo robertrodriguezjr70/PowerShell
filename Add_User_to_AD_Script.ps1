@@ -1,4 +1,14 @@
-#New-ADUser "first last"-Office <name> -mobilephone "xxx-xxx-xxxx"
+#New-ADUser "first last" `
+#-Office <name>`
+#-mobilephone "xxx-xxx-xxxx" `
+#-GivenName "First Name" `
+#-Surname "Last Name" `
+#-AccountPassword (ConvertTo-SecureString "password" -AsPlainText -Force) '
+#-Path "OU path"
+#-Enabled $True
+
+
+
 #Get-ADUser "first last"
 #Set-ADObject -Description "blah"
 
