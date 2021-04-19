@@ -8,6 +8,8 @@
 #-Enabled $True
 
 
+#New-ADUser "The Hulk" -Enabled $true -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+
 #Get-ADUser "first last"
 #Set-ADObject -Description "blah"
        
