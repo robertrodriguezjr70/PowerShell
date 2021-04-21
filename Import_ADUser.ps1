@@ -1,11 +1,11 @@
 
 #view users from csv file
-Import-Csv "<file path>" |Out-GridView
+#Import-Csv "<file path>" |Out-GridView
 
-Import-Csv "<file path>" |
-            New-ADUser '
-            -enabled $True
-            -accountpassword $(convertTo-SecureString "password" -AsPlainText -Force)
+#Import-Csv "<file path>" |
+#            New-ADUser '
+#            -enabled $True
+#            -accountpassword $(convertTo-SecureString "password" -AsPlainText -Force)
             
 
 
