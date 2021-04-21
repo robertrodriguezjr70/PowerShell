@@ -10,7 +10,7 @@
 
 #New-ADUser "The Hulk" -Enabled $true -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
 
-#Get-ADUser "first last"
+#Get-ADUser "first last" -Properties *
 #Set-ADObject -Description "blah"
        
 #$pw=Read-Host "What is the password" -AsSecureString
