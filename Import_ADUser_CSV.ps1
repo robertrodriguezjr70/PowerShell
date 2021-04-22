@@ -4,9 +4,10 @@
 
 #Import-Csv "<file path>" |
 #            New-ADUser '
+#            -accountpassword $(convertTo-SecureString "IpSecurity1!" -AsPlainText -Force) `
 #            -enabled $True
-#            -accountpassword $(convertTo-SecureString "password" -AsPlainText -Force)
             
+# Import-Csv "c:\Imports\Userimport.csv" |New-ADUser -accountpassword $(convertTo-SecureString "IpSecurity1!" -AsPlainText -Force)  -enabled $True           
 
 
 #$users= Import-CSV <Path>
