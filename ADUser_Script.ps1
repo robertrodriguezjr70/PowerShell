@@ -17,6 +17,10 @@
 #Set-ADAccountpassword "first last" -NewPassword $pw
 #Enable-ADAccount "first last"
 
+# Disable user
+ # Set-Aduser "The Hulk" -Enabled $False
+
+
 #$Firstname = Read-Host -Prompt "Please enter First Name"
 #$Lastname = Read-Host -Prompt "Please enter  Last Name"
 
