@@ -2,6 +2,9 @@
 get-help get-adcomputer 
 get-help Get-ADComputer -Examples
 
+# Disable a computer
+#Set-ADComputer <name> -Enabled $False
+
 #create computer accounts from a CSV file
 import-csv .\computers.csv | new-adcomputer
 
