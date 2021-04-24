@@ -117,6 +117,15 @@
 #Enter-PSSession -computername <computername> <-- on source computer
 
 #---------------------------  End Commands Learned -------------------------------------------------------------------------------------------------
+
+Get-Process | ForEach-Object {$_.ProcessName}
+
+cls
+$ctr=0
+Get-Service| ForEach-Object {$ctr=$ctr+1}
+Write-Host $ctr
+
+
 Try
 {
  Get-Service -name blahblah -ErrorAction Stop  <--will display catch error message
