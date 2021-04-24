@@ -89,6 +89,8 @@
 #Get-ADuser -Properties <property>
 #Get-ADUser -Filter * | Select-Object name
 
+# Get-ADUser -Filter * |Where-Object Enabled -eq $false
+
 #Set-Aduser <first last> -Properties <property>
 
 #Get-ADuser -Filter {Enabled -eq $True} -SearchBase "OU Path"|Select-Object name
