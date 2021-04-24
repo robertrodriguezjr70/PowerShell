@@ -95,6 +95,10 @@
 
 #Get-ADuser -Filter {Enabled -eq $True} -SearchBase "OU Path"|Select-Object name
 
+#Search-ADaccount -AccountInactive -UsersOnly -DatTime '01/01/2021' |OGV
+#Search-ADaccount -AccountInactive -UsersOnly -TimeSpan (New-TimSpan -days 90) |Ogv
+
+
 #Get-ADGroupMember 'group name' | Select-Object name
 
 #Search-ADAccount -AccountDisabled
