@@ -89,6 +89,9 @@
 #Get-ADuser -Properties <property>
 #Get-ADUser -Filter * | Select-Object name
 
+#read-host"Enter the user account to unlock" | unlock-ADAccount
+#read-host"Enter the user account to unlock" | Disable-ADAccount
+
 #Search-ADAccount -AccountDisabled
 
 # Get-ADUser -Filter * |Where-Object Enabled -eq $false
