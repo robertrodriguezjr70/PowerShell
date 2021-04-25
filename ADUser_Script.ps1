@@ -10,6 +10,9 @@
 
 #New-ADUser "The Hulk" -Enabled $true -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
 
+#Set-ADAccountpassword <first last> -NewPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+#Set-ADUser <> -Enabled $True
+
 #Get-ADUser "first last" -Properties *
 #Set-ADObject -Description "blah"
        
