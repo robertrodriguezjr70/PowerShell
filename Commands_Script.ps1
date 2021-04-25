@@ -103,7 +103,7 @@
 
 #Get-ADGroupMember 'group name' | Select-Object name
 
-#Search-ADAccount -AccountDisabled
+
 #Search-ADAccount -AccountDisabled | Move-ADObject -TargetPath "OU path"
 
 
