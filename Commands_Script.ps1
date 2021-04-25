@@ -89,6 +89,8 @@
 #Get-ADuser -Properties <property>
 #Get-ADUser -Filter * | Select-Object name
 
+#Search-ADAccount -AccountDisabled
+
 # Get-ADUser -Filter * |Where-Object Enabled -eq $false
 
 #Set-Aduser <first last> -Properties <property>
