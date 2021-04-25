@@ -83,6 +83,7 @@
 #Start-Sleep - seconds 5
 #Read-Host
 #Test-Connection google.com
+#Get-ADForest
 
 #user Management
 #Get-Aduser -Properties *
