@@ -101,6 +101,11 @@
 #Set-ADUser <first last> -clear carLicense
 #Set-AdUser <First last> -Replace @{carLicense='KF5ZRO'}
 
+#New-ADUser "The Hulk" -Enabled $true -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+
+#Set-ADAccountpassword <first last> -NewPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+#Set-ADUser <> -Enabled $True
+
 #Get-ADuser -Filter {Enabled -eq $True} -SearchBase "OU Path"|Select-Object name
 
 #Search-ADaccount -AccountInactive -UsersOnly -DatTime '01/01/2021' |OGV
