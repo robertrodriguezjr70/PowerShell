@@ -2,7 +2,7 @@
 #Update-Help
 #Get-Help <command> - online
 #Start/Stop-Transcript
-#Import-Module <module name>
+#Import-Module <module name> Exampe: Import-Module ActiveDirectory
 #Get-ExecutionPolicy
 #hostname
 #Set-ExecutionPolicy Unrestricted
