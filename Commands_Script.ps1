@@ -94,6 +94,7 @@
 # Get-ADUser -Filter * |Where-Object Enabled -eq $false
 
 #Set-Aduser <first last> -Properties <property>
+#Set-AdUser <First last> -Replace @{carLicense='KF5ZRO'}
 
 #Get-ADuser -Filter {Enabled -eq $True} -SearchBase "OU Path"|Select-Object name
 
@@ -117,6 +118,7 @@
 #-LastName $Lastname `
 #-UserPrincipalName "$Firstname.$Lasntname"
 
+# New-ADUser <name> -Description "Finance" -OtherAttributes @{carLicense='kf5zro'}
 
 
 
