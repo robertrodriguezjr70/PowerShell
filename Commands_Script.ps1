@@ -84,6 +84,7 @@
 #Read-Host
 #Test-Connection google.com
 #Get-ADForest
+#Get-ADDomainController -Filter *|Select-Object ipv4address, name, site, domain, forest,operatingsystem
 
 #user Management
 #Get-Aduser -Properties *
