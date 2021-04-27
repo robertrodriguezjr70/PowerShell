@@ -28,11 +28,12 @@
 #$Lastname = Read-Host -Prompt "Please enter  Last Name"
 
 #----- import from CSV and add list of users to AD ----
-#$users=Import-CSV <path>
+
+#$users=Import-CSV <path>   <-- Assign to a var
 
 
-#Import-Csv >? |OGV
-#Import-Csv <path> | New-ADuser -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+#Import-Csv >? |OGV <--look at what our importing
+#Import-Csv <path> | New-ADuser -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force) -Enabled $True
 
 
 #ForEach($user in $users)
