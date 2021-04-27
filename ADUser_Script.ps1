@@ -30,6 +30,11 @@
 #----- import from CSV and add list of users to AD ----
 #$users=Import-CSV <path>
 
+
+#Import-Csv >? |OGV
+#Import-Csv <path> | New-ADuser -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+
+
 #ForEach($user in $users)
 {
 #New-ADUser
