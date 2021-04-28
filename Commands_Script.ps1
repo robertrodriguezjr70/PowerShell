@@ -69,57 +69,59 @@
 
 #get-eventlog application | ogv
 
-#Computer Management
-#Get-CimInstance -class Win32_bios
-#Get-CimInstance Win32_processor
-#Get-CimInstance -class Win32_PnPSignedDriver
-#Get-CimInstance -class Win32_LogicalDisk
-#Get-Printer
-#Get-PrinterPort
-#Get-WindowsUpdateLog
-#Get-Certificate
-#Get-EventLog
-#Get-TimeZone
-#Start-Sleep - seconds 5
-#Read-Host
-#Test-Connection google.com
-#Get-ADForest
-#Get-ADDomainController -Filter *|Select-Object ipv4address, name, site, domain, forest,operatingsystem
+# Computer Management
+ # Get-CimInstance -class Win32_bios
+ # Get-CimInstance Win32_processor
+ # Get-CimInstance -class Win32_PnPSignedDriver
+ # Get-CimInstance -class Win32_LogicalDisk
+ # Get-Printer
+ # Get-PrinterPort
+ # Get-WindowsUpdateLog
+ # Get-Certificate
+ # Get-EventLog
+ # Get-TimeZone
+ # Start-Sleep - seconds 5
+ # Test-Connection google.com
+ # Get-ADForest
+ # Get-ADDomainController -Filter *|Select-Object ipv4address, name, site, domain, forest,operatingsystem
 
-#user Management
-#Get-Aduser -Properties *
-#Get-ADuser -Properties <property>
-#Get-ADUser -Filter * | Select-Object name
-#Get-ADuser <First last> -Properties Enabled,DisplayName
+# user Management
+# Get-Aduser -Properties *
+# Get-ADuser -Properties <property>
+# Get-ADUser -Filter * | Select-Object name
+# Get-ADuser <First last> -Properties Enabled,DisplayName
 
-#read-host"Enter the user account to unlock" | unlock-ADAccount
-#read-host"Enter the user account to unlock" | Disable-ADAccount
+# read-host"Enter the user account to unlock" | unlock-ADAccount
+# read-host"Enter the user account to unlock" | Disable-ADAccount
 
-#Search-ADAccount -AccountDisabled
+# Search-ADAccount -AccountDisabled
 
 # Get-ADUser -Filter * |Where-Object Enabled -eq $false
 
-#Set-Aduser <first last> -Properties <property>
-#Set-ADUser Fuddy.Duddy -Identity accountant_user1 -Office 'Atlanta' -State 'GA'
+# Set-Aduser <first last> -Properties <property>
+# Set-ADUser Fuddy.Duddy -Identity accountant_user1 -Office 'Atlanta' -State 'GA'
 
-#Set-ADUser <first last> -clear carLicense
-#Set-AdUser <First last> -Replace @{carLicense='KF5ZRO'}
+# Set-ADUser <first last> -clear carLicense
+# Set-AdUser <First last> -Replace @{carLicense='KF5ZRO'}
 
-#New-ADUser "The Hulk" -Enabled $true -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+# New-ADUser "The Hulk" -Enabled $true -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
 
-#Set-ADAccountpassword <first last> -NewPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
-#Set-ADUser <> -Enabled $True
+# Set-ADAccountpassword <first last> -NewPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force)
+# Set-ADUser <> -Enabled $True
 
-#Get-ADuser -Filter {Enabled -eq $True} -SearchBase "OU Path"|Select-Object name
+# Get-ADuser -Filter {Enabled -eq $True} -SearchBase "OU Path"|Select-Object name
 
-#Search-ADaccount -AccountInactive -UsersOnly -DatTime '01/01/2021' |OGV
-#Search-ADaccount -AccountInactive -UsersOnly -TimeSpan (New-TimSpan -days 90) |Ogv
-
-
-#Get-ADGroupMember 'group name' | Select-Object name
+# Search-ADaccount -AccountInactive -UsersOnly -DatTime '01/01/2021' |OGV
+# Search-ADaccount -AccountInactive -UsersOnly -TimeSpan (New-TimSpan -days 90) |Ogv
 
 
-#Search-ADAccount -AccountDisabled | Move-ADObject -TargetPath "OU path"
+# Get-ADGroupMember 'group name' | Select-Object name
+
+
+# Search-ADAccount -AccountDisabled | Move-ADObject -TargetPath "OU path"
+
+# Unlock-ADAccount -Identity <First Last>
+# Search-ADAccount -LockedOut -SearchBase "OU=?"| Unlock-ADAccount  <-- to unlock ALL locked out users
 
 
 #Read Input
