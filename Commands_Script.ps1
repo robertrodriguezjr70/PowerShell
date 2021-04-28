@@ -100,6 +100,7 @@
 # Get-ADUser -Filter * |Where-Object Enabled -eq $false
 
 #Set-Aduser <first last> -Properties <property>
+#Set-ADUser Fuddy.Duddy -Identity accountant_user1 -Office 'Atlanta' -State 'GA'
 
 #Set-ADUser <first last> -clear carLicense
 #Set-AdUser <First last> -Replace @{carLicense='KF5ZRO'}
