@@ -113,6 +113,8 @@
 
 # Search-ADaccount -AccountInactive -UsersOnly -DatTime '01/01/2021' |OGV
 # Search-ADaccount -AccountInactive -UsersOnly -TimeSpan (New-TimSpan -days 90) |Ogv
+#Search-ADaccount -AccountInactive -UsersOnly -TimeSpan ([timespan]'45')|Ogv
+#$DaysInactive =[timespan]'90'
 
 
 # Get-ADGroupMember 'group name' | Select-Object name
