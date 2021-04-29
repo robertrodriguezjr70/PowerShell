@@ -1,0 +1,6 @@
+
+# $DaysInactive=[Timespan]'90' or  $Daysinactibe= New-TimeSpan -Days 90
+# $InactiveComputers = Search-ADAccount -AccountInactive -ComputersOnly -TimeSpan $DaysInactive 
+
+#cls
+# $InactiveComputers|Disable-ADAccount -PassThru -WhatIf
