@@ -90,6 +90,7 @@
 # Get-ADuser -Properties <property>
 # Get-ADUser -Filter * | Select-Object name
 # Get-ADuser <First last> -Properties Enabled,DisplayName
+#Get-ADUser -Filter * -Properties Passwordexpired|Format-Table   name, Enabled
 
 # read-host"Enter the user account to unlock" | unlock-ADAccount
 # read-host"Enter the user account to unlock" | Disable-ADAccount
