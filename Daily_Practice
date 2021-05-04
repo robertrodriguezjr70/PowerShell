@@ -1,0 +1,3 @@
+# Search-ADAccount -UsersOnly -AccountInactive -TimeSpan 14|Select-Object SamAccountname
+# Set-ADUser Test.User1 -Replace @{carLicense='Test1'}
+# Get-ADUser Test.User1 -Properties carLicense
