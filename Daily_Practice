@@ -1,3 +1,10 @@
 # Search-ADAccount -UsersOnly -AccountInactive -TimeSpan 14|Select-Object SamAccountname
 # Set-ADUser Test.User1 -Replace @{carLicense='Test1'}
+# Set-ADUser Test.User1 -Enabled $False
 # Get-ADUser Test.User1 -Properties carLicense
+
+# $ImportFile = Import-Csv c:\.......
+Foreach( $i in $ImportFile)
+{
+  Write-Host $i
+}
