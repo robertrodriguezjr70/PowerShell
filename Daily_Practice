@@ -2,7 +2,15 @@
 # Set-ADUser Test.User1 -Replace @{carLicense='Test1'}
 # Set-ADUser Test.User1 -Enabled $False
 # Get-ADUser Test.User1 -Properties carLicense
-Get-ADUser -Filter 'GivenName -like "Michael"'
+# Get-ADUser -Filter 'GivenName -like "Michael"'
+# Get-Process notepad|Stop-Process
+
+ |Select-Object
+ |Sort-Object
+ |Where-Object
+ |Format-Wide
+
+
 
 
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
