@@ -11,11 +11,12 @@
  |Format-Wide
 
 
-Get-date|Outfile <path> -Append
+# Get-date|Outfile <path> -Append
+# $date = Get-Date -Format "MM/dd/yyyy"
 
 
-$Date.AddMonths(-3)  <-- current month minus 
-Get-EventLog system -after $Date
+$ Date.AddMonths(-3)  <-- current month minus 
+#Get-EventLog system -after $Date
 
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
 
