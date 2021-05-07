@@ -11,7 +11,7 @@
  |Format-Wide
 
 
-
+Get-date|Outfile <path> -Append
 
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
 
