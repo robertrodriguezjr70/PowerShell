@@ -13,6 +13,10 @@
 
 Get-date|Outfile <path> -Append
 
+
+$Date.AddMonths(-3)  <-- current month minus 
+Get-EventLog system -after $Date
+
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
 
 # $ImportFile = Import-Csv c:\.......
