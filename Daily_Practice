@@ -3,6 +3,7 @@
 # Set-ADUser Test.User1 -Enabled $False
 # Get-ADUser Test.User1 -Properties carLicense
 # Get-ADUser -Filter 'GivenName -like "Michael"'
+# Get-ADUser robert.rodriguez -Properties *|Select-Object name, carlicense
 # Get-Process notepad|Stop-Process
 
  |Select-Object
