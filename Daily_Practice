@@ -15,9 +15,16 @@
 # Get-date|Outfile <path> -Append
 # $date = Get-Date -Format "MM/dd/yyyy"
 
+# $Date.AddMonths(-3)  <-- current month minus 
+# Get-EventLog system -after $Date
+# cls
+# $date = Get-Date 
+# Get-EventLog application -After $date.AddMonths(-1)|Where-Object EntryType -eq "error"|ogv
 
-$ Date.AddMonths(-3)  <-- current month minus 
-#Get-EventLog system -after $Date
+
+
+
+
 
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
 
