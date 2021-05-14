@@ -23,9 +23,6 @@
 
 
 
-
-
-
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
 
 # $ImportFile = Import-Csv c:\.......
@@ -33,3 +30,9 @@ Foreach( $i in $ImportFile)
 {
   Write-Host $i
 }
+
+
+New-Item -Itemtype Directory
+New-Item file.txt
+Copy-Item '.\file.txt'  '.\Documents'
+
