@@ -12,7 +12,7 @@
  |Format-Wide
 
 # gci|Select-Object -Property name|Where-Object {$_.Name.Contains("&")}
-# gci| Where-Object -Property name -Like -Value  "*&*"
+# gci| Where-Object -Property name -Like -Value  "*&*"  <-- need to use *'s when using where - object
 
 # Get-date|Outfile <path> -Append
 # $date = Get-Date -Format "MM/dd/yyyy"
