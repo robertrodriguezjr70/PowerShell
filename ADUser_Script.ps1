@@ -43,7 +43,8 @@
 #-Name  $user.'First Name + ' " " ' + $user.'Last Name') `
 #-GivenName $user.'First Name' `
 #-Surname $user.'Last Name'
-#-Description #user.Description
+#-Description $user.Description
+#-AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force) -Enabled $True
 
 }
 
