@@ -51,7 +51,7 @@
 #  -displayname     $user.'displayname'                              `
 #  -city            $user.'city'                                     `
 #  -state           $user.'state'                                    `           
-#  -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force) `
+#  -AccountPassword (convertto-securestring "IpSecurity1!" -AsPlainText -Force) `
 #  -Enabled         $True                                              
 # 
 # }
