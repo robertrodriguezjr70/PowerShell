@@ -37,15 +37,30 @@
 #Import-Csv <path> | New-ADuser -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force) -Enabled $True
 
 
-#ForEach($user in $users)
-{
-#New-ADUser
-#-Name  $user.'First Name + ' " " ' + $user.'Last Name') `
-#-GivenName $user.'First Name' `
-#-Surname $user.'Last Name'
-#-Description $user.Description
-#-AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force) -Enabled $True
-
-}
-
 #----- import from CSV and add list of users to AD ----
+
+#cls
+#$file = Import-Csv C:\Imports\UserImport.csv
+#Foreach($user in $file)
+#{
+#  New-ADUser                                                        `
+#  -samaccountname  $user.'samaccountname'                           `
+#  -Name            $user.'name'                                     `
+#  -GivenName       $user.'givenname'                                `
+#  -Surname         $user.'surname'                                  `
+#  -displayname     $user.'displayname'                              `
+#  -city            $user.'city'                                     `
+#  -state           $user.'state'                                    `           
+#  -AccountPassword $(convertto-securestring "IpSecurity1!" -AsPlainText -Force) `
+#  -Enabled         $True                                              
+# 
+# }
+
+
+
+
+
+
+
+
+
