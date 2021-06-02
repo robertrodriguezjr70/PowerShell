@@ -40,6 +40,9 @@ Foreach( $i in $ImportFile)
   # Copy-Item '.\file.txt'  '.\Documents'
 
 # Text manipulation
-  # $var.substring(starting,ending)
-  # $var.indexof(value)
+
+  # $url = "http://www.aboutrobertrodriguez.com:443".Contains("443")
+  # $value = "http://www.aboutrobertrodriguez.com:443".LastIndexOf(":")
+  # $url = "http://www.aboutrobertrodriguez.com:443".Substring(0,$value)
+  
 
