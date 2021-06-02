@@ -34,7 +34,12 @@ Foreach( $i in $ImportFile)
 }
 
 
-New-Item -Itemtype Directory
-New-Item file.txt
-Copy-Item '.\file.txt'  '.\Documents'
+# Files
+  # New-Item -Itemtype Directory
+  # New-Item file.txt
+  # Copy-Item '.\file.txt'  '.\Documents'
+
+# Text manipulation
+  # $var.substring(starting,ending)
+  # $var.indexof(value)
 
