@@ -34,6 +34,9 @@ Foreach( $i in $ImportFile)
 }
 
 
+  # $Process = Get-service|Where-Object status -eq "running"|ForEach-Object {$cntr=0;Write-Host "Start"} `
+  # {$cntr=$cntr +1;Write-Host "line "$cntr}{Write-Host "Total: "$cntr}
+
 # Files
   # New-Item -Itemtype Directory
   # New-Item file.txt
