@@ -41,7 +41,9 @@ Foreach( $i in $ImportFile)
   # New-Item -Itemtype Directory
   # New-Item file.txt
   # Copy-Item '.\file.txt'  '.\Documents'
-
+  # Add-Content -Path C:\Imports\DateLog.txt -Value "The cow jumped over the moon"
+  # Get-Date|Out-File c:\imports\datelog.txt -append
+ 
 # Text manipulation
 
   # $url = "http://www.aboutrobertrodriguez.com:443".Contains("443")
