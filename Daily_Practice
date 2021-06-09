@@ -27,12 +27,6 @@
 
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
 
-# $ImportFile = Import-Csv c:\.......
-Foreach( $i in $ImportFile)
-{
-  Write-Host $i
-}
-
 
   # $Process = Get-service|Where-Object status -eq "running"|ForEach-Object {$cntr=0;Write-Host "Start"} `
   # {$cntr=$cntr +1;Write-Host "line "$cntr}{Write-Host "Total: "$cntr}
@@ -43,6 +37,8 @@ Foreach( $i in $ImportFile)
   # Copy-Item '.\file.txt'  '.\Documents'
   # Add-Content -Path C:\Imports\DateLog.txt -Value "The cow jumped over the moon"
   # Get-Date|Out-File c:\imports\datelog.txt -append
+  # Get-Process|Select-Object Processname, ID, CPU -Last 10|Sort-Object ID| Export-Csv -Path C:\Imports\process.csv -NoTypeInformation
+  # Import-Csv C:\Imports\process.csv
  
 # Text manipulation
 
