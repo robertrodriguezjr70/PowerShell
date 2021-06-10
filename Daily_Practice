@@ -36,6 +36,7 @@
   # New-Item file.txt
   # Copy-Item '.\file.txt'  '.\Documents'
   # Add-Content -Path C:\Imports\DateLog.txt -Value "The cow jumped over the moon"
+  # Get-Content -Path c:\Imports\Datelog.txt
   # Get-Date|Out-File c:\imports\datelog.txt -append
   # Get-Process|Select-Object Processname, ID, CPU -Last 10|Sort-Object ID| Export-Csv -Path C:\Imports\process.csv -NoTypeInformation
   # Import-Csv C:\Imports\process.csv
