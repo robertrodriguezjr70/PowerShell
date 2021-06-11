@@ -1,0 +1,5 @@
+$action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument 'C:\imports\ScheduledTask.ps1'
+
+$trigger =  New-ScheduledTaskTrigger -Daily -At 10am
+
+Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "VideoPS Demo" -Description "Robert Was here!"
