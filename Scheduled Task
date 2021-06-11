@@ -1,3 +1,6 @@
+# Executing the below in PS will create a scheduled task in Windows Task Scheduler
+
+
 $action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument 'C:\imports\ScheduledTask.ps1'
 
 $trigger =  New-ScheduledTaskTrigger -Daily -At 5am
