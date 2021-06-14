@@ -28,7 +28,7 @@
 # Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=robertssandbox, DC=robertssandbox, DC=com"|Disable-ADAccount
 
  
-  # $Process = Get-service|Where-Object status -eq "running"|ForEach-Object {$cntr=0;Write-Host "Start"} `
+  # $Process = Get-service|Where-Object status -eq "running" -and name -like "chrome"|ForEach-Object {$cntr=0;Write-Host "Start"} `
   # {$cntr=$cntr +1;Write-Host "line "$cntr}{Write-Host "Total: "$cntr}
   # Get-Process|Where-Object name -Like "Chrome"|ForEach-Object{$cntr=0}{$cntr=$cntr + 1}{Write-Host "Total: $cntr"}
 
