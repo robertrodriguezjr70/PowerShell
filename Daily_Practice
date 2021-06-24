@@ -49,4 +49,20 @@
   # $value = "http://www.aboutrobertrodriguez.com:443".LastIndexOf(":")
   # $url = "http://www.aboutrobertrodriguez.com:443".Substring(0,$value)
   
+# Foreach - getting user values from a CSV
+function import_users_from_CSV{
+   #Get values out of CSV
+    try{$file = Import-Csv -Path $pth}
+    catch{write-host "An error occured"}
 
+    return $file
+}     
+function print_CSV_users{
+    foreach($i in $users){
+      Write-Host $i.Fname
+    }
+}   
+cls
+#Import users from CSV
+$users = import_users_from_CSV 
+print_CSV_users
