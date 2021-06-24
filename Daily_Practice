@@ -10,6 +10,7 @@
  |Sort-Object
  |Where-Object
  |Format-Wide
+ |foreach-Object 
 
 # gci|Select-Object -Property name|Where-Object {$_.Name.Contains("&")}
 # gci| Where-Object -Property name -Like -Value  "*&*"  <-- need to use *'s when using where - object
@@ -41,6 +42,7 @@
   # Get-Date|Out-File c:\imports\datelog.txt -append
   # Get-Process|Select-Object Processname, ID, CPU -Last 10|Sort-Object ID| Export-Csv -Path C:\Imports\process.csv -NoTypeInformation
   # Import-Csv C:\Imports\process.csv
+  # $new_log_file_path = "C:\Imports\new_log $(get-date -f MM-dd-yyyy).txt"
  
 # Text manipulation
 
