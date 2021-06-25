@@ -1,0 +1,18 @@
+cls
+# get the index of the illigal char
+  $legal_char = "_"
+  $mystring = "Robert Rodriguez"
+  $delim = $mystring.IndexOf(" ")
+
+# Get string from start to illigal char location
+  $mystring1 = $mystring.Substring(0,$delim)
+  
+# Get string one char after illigal char location
+  $mystring2 = $mystring.Substring($delim + 1)
+
+# Join both strings together with legal char seperator 
+  $mystring = $mystring1 + $legal_char + $mystring2
+
+Write-Host $mystring1
+Write-Host $mystring2
+Write-Host $mystring
