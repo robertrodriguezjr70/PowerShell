@@ -18,8 +18,8 @@
 
 # Get-date|Outfile <path> -Append
 # $date = Get-Date -Format "MM/dd/yyyy"
-
-# $Date.AddMonths(-3)  <-- current month minus 
+# $date = (Get-Date).AddDays(-1)   <-- current day minus
+# $Date.AddMonths(-3)              <-- current month minus 
 # Get-EventLog system -after $Date
 # cls
 # $date = Get-Date 
